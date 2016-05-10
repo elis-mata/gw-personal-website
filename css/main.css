@@ -1,0 +1,399 @@
+/*Portfolio Template 3 Styles*/
+/*Colors*/
+
+/*Global Styles*/
+body, html{
+  margin: 0;
+}
+
+h1,h2,h3{
+  margin: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+
+}
+
+/*Banner Styles*/
+
+#banner{
+  height: 550px;
+  width: 100%;
+  background: url("../img/photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.rhcp {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.title{
+  padding: 150px 150px 0 150px;
+}
+.title h1{
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  margin-top: 20px;
+}
+
+#banner button{
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin: 3% 0  0 45%;
+  position: absolute;
+  background-color: transparent;
+}
+
+#banner button:hover{
+  border-color: lightblue;
+  color: lightblue;
+}
+
+/*Header Styles*/
+
+header{
+  height: 57px;
+  width: 100%;
+  background-color: #575757;
+  /*#D3794F*/
+}
+.logo{
+  width:300px;
+  height: 100%;
+  float: left;
+}
+
+.logo h1{
+  text-align: center;
+  padding: 12px 0px;
+  color: black;
+}
+
+.menu{
+  height: 100%;
+  width: 500px;
+  float: right;
+}
+
+.menu ul{
+  position: relative;
+  padding: 6px 0;
+}
+
+.menu li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.menu a:hover{
+  color: #D3794F;
+}
+
+/*Home Styles*/
+
+#home{
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  padding-top: 45px;
+}
+
+.home-container{
+  height: 50%;
+  width: 85%;
+  margin: 0 auto;
+
+}
+
+#home article{
+  height: 150;
+  width: 25%;
+  float: left;
+  margin: 0 20px;
+  padding: 10px 25px;
+  text-align: justify;
+}
+
+#home h1{
+  color: #D3794F;
+}
+
+/*About Styles*/
+
+#about{
+  width: 100%;
+  background-color: #D3794F;
+}
+
+.img-box{
+  height: 560px;
+  width: 50%;
+  float: left;
+}
+
+.img-container{
+  height: 560px
+  width: 100%;
+}
+
+#about img{
+  width: 100%;
+  height: 560px;
+}
+
+.about-info{
+  height: 560px;
+  width: 50%;
+  float: left;
+}
+
+.about-content{
+  height: 200px;
+  width: 100%;
+  background-color: #f4eee1;
+}
+
+.about-content h1{
+  text-align: center;
+  padding: 20px 0 0 0;
+  font-size: 2em;
+  color: #D3794F;
+}
+
+.about-content p{
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.about-boxes1{
+  width: 100%;
+  height: 180px;
+  background-color: red;
+  display:inline-flex;
+}
+
+.about-boxes2{
+  width: 100%;
+  height: 180px;
+  background-color: purple;
+  display:inline-flex;
+}
+
+#about article{
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#about article h1{
+  width: 100%;
+  float: left;
+  margin-left: 65px;
+}
+
+
+#about article p{
+    text-align: justify;
+    float: left;
+}
+
+#about article i{
+  padding-right: 15px;
+  display: inline-flex;
+}
+
+/*Tours Styles*/
+
+#tours{
+  height: 285px;
+  width: 100%;
+  padding: 50px 0;
+  background-color: white;
+  display:inline-block;
+}
+
+.tours-content h1{
+  text-align: center;
+  font-size: 2em;
+  color: #D3794F;
+}
+
+.tours-content p{
+  text-align: justify;
+  padding: 15px 140px;
+}
+
+#tours button{
+  height: 40px;
+  width: 125px;
+  background-color: #D3794F;
+  border: 2px solid #D3794F;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.2em;
+  margin: 15px 140px;
+}
+
+#tours button:hover{
+  color: #75625e;
+}
+
+/*Testimonial Styles*/
+
+#testimonials {
+  height: 250px;
+  width: 100%;
+  background-image: url("../img/wood.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  display: inline-block;
+  color: white;
+}
+
+.overlay{
+  height: 250px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+}
+
+.reviews{
+  margin: 70px 140px;
+  text-align: center;
+}
+
+.reviews h4{
+  padding: 10px;
+}
+
+/*Places Styles*/
+#places{
+  height: 700px;
+  width: 100%;
+  background-color: white;
+}
+
+.places-content{
+height: 200px;
+width: 100%;
+}
+
+.places-content h1{
+  font-size: 2em;
+  color: #D3794F;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.places-content p{
+  text-align: center;
+  margin: 0 90px;
+}
+
+/*Contact Styles*/
+#contact{
+  height: 450px;
+  width: 100%;
+  background-color: #3c455c;
+}
+
+#contact h1{
+  font-size: 2em;
+  color: #D3794F;
+}
+
+.info-box{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.info-content{
+  margin: 40px 120px 40px 40px;
+}
+
+.form{
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  color: #D3794F;
+}
+
+.form-box{
+  margin: 40px 120px 40px 40px;
+}
+
+#contact input{
+  height: 35px;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #dde2e3;
+}
+
+#contact textarea{
+  height: 125px;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #dde2e3;
+}
+
+#contact button{
+  height: 40px;
+  width: 125px;
+  background-color: #D3794F;
+  border: 2px solid #D3794F;
+  color: #dde2e3;
+  font-size: 1.2em;
+}
+
+#contact button:hover{
+  color: #75625e;
+}
+
+/*Footer Styles*/
+footer{
+  height: 150px;
+  width: 100%;
+  background-color: #575757;
+  clear: both;
+}
+
+.copyright p{
+  margin: 0;
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+}
+
+.sm-icons{
+  width: 240px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.icon{
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  float: left;
+  margin: 0 5px;
+  border-radius: 100%;
+}
+
+.icon i{
+  font-size: 2em;
+  color: #333;
+  padding: 10px;
+}

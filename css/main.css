@@ -1,9 +1,10 @@
 /*Portfolio Template 3 Styles*/
-/*Colors*/
 
 /*Global Styles*/
 body, html{
   margin: 0;
+  font-family: 'catamaran', sans-serif;
+  /*font-family: 'karla', sans-serif;*/
 }
 
 h1,h2,h3{
@@ -51,11 +52,16 @@ a{
   margin: 3% 0  0 45%;
   position: absolute;
   background-color: transparent;
+  cursor: pointer;
 }
 
 #banner button:hover{
   border-color: lightblue;
   color: lightblue;
+}
+
+#banner button:active{
+  transform: translatey(4px);
 }
 
 /*Header Styles*/
@@ -74,8 +80,13 @@ header{
 
 .logo h1{
   text-align: center;
-  padding: 12px 0px;
+  padding: 5px 0px;
   color: black;
+}
+
+.logo i{
+  padding-right: 6px;
+  font-size: 0.9em;
 }
 
 .menu{
@@ -86,7 +97,7 @@ header{
 
 .menu ul{
   position: relative;
-  padding: 6px 0;
+  padding: 1px 0;
 }
 
 .menu li{
@@ -135,23 +146,23 @@ header{
 }
 
 .img-box{
-  height: 560px;
+  height: 600px;
   width: 50%;
   float: left;
 }
 
 .img-container{
-  height: 560px
+  height: 600px
   width: 100%;
 }
 
 #about img{
   width: 100%;
-  height: 560px;
+  height: 600px;
 }
 
 .about-info{
-  height: 560px;
+  height: 600px;
   width: 50%;
   float: left;
 }
@@ -174,49 +185,67 @@ header{
   text-align: justify;
 }
 
-.about-boxes1{
+.about-box{
   width: 100%;
-  height: 180px;
-  background-color: red;
+  height: 400px;
+  background-color: #f4eee1;
   display:inline-flex;
-}
-
-.about-boxes2{
-  width: 100%;
-  height: 180px;
-  background-color: purple;
-  display:inline-flex;
-}
-
-#about article{
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
-#about article h1{
+.toprow{
+  height: 50%;
   width: 100%;
-  float: left;
-  margin-left: 65px;
+  display: block;
+  margin: 75px 20px 20px 20px;
 }
 
-
-#about article p{
-    text-align: justify;
-    float: left;
+.toprow h1{
+  text-align: center;
+}
+.toprow p{
+  text-align: justify;
 }
 
-#about article i{
-  padding-right: 15px;
-  display: inline-flex;
+.toprow i{
+  padding-right: 5px;
+  color: #D3794F;
+  font-size: 1.5em;
+}
+.bottomrow{
+  height: 50%;
+  width: 100%;
+  display: block;
+  margin: 75px 20px 20px 20px;
+}
+.bottomrow h1{
+  text-align: center;
+}
+
+.bottomrow p{
+  text-align: justify;
+}
+
+.bottomrow i{
+  padding-right: 5px;
+  color: #D3794F;
+  font-size: 1.5em;
+}
+
+.history{
+  margin-bottom: 40px;
+}
+
+.countries{
+  margin-bottom: 40px;
 }
 
 /*Tours Styles*/
 
 #tours{
-  height: 285px;
+  height: 340px;
   width: 100%;
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: white;
   display:inline-block;
 }
@@ -241,10 +270,16 @@ header{
   color: #fff;
   font-size: 1.2em;
   margin: 15px 140px;
+  cursor: pointer;
+  outline: none;
 }
 
 #tours button:hover{
   color: #75625e;
+}
+
+#tours button:active{
+  transform: translatey(4px);
 }
 
 /*Testimonial Styles*/
@@ -252,12 +287,13 @@ header{
 #testimonials {
   height: 250px;
   width: 100%;
-  background-image: url("../img/wood.jpg");
+  background-image: url("../img/map.jpg");
   background-size: cover;
-  background-position: center;
+  background-position:top;
   background-attachment: scroll;
   display: inline-block;
   color: white;
+  font-size: 1.1em;
 }
 
 .overlay{
@@ -268,7 +304,7 @@ header{
 }
 
 .reviews{
-  margin: 70px 140px;
+  margin: 50px 140px;
   text-align: center;
 }
 
@@ -280,19 +316,28 @@ header{
 #places{
   height: 700px;
   width: 100%;
-  background-color: white;
+  background-color: #f4eee1;
+  display: inline-flex;
+}
+
+.places-box{
+  height: 700px;
+  width: 100%;
+  display: block;
+  float: left;
 }
 
 .places-content{
-height: 200px;
+height: 21%;
 width: 100%;
+display: block;
 }
 
 .places-content h1{
   font-size: 2em;
   color: #D3794F;
   text-align: center;
-  margin: 40px 0;
+  margin: 40px 0 10px 0;
 }
 
 .places-content p{
@@ -300,18 +345,111 @@ width: 100%;
   margin: 0 90px;
 }
 
+.pic-box{
+  height: 70%;
+  width: 100%;
+  float left;
+  margin-top: 0px;
+  padding: 0 20px 0 20px;
+}
+
+.right-row{
+  height: 100%;
+  width: 33%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.right-row article{
+  height: 235px;
+  width: 400px;
+  display: block;
+}
+
+.right-row img{
+  height: 100%;
+  width: 100%;
+}
+
+.left-row{
+  height: 100%;
+  width: 33%;
+  display: inline-block;
+  float: left;
+  margin-left: 3px;
+}
+
+.left-row article{
+  height: 235px;
+  width: 400px;
+  display: block;
+}
+
+.left-row img{
+  height: 100%;
+  width: 100%;
+}
+
+.middle-row{
+  height: 100%;
+  width: 33%;
+  display: inline-block;
+  float: left;
+  margin-left: 3px;
+}
+
+.middle-row article{
+  height: 235px;
+  width: 400px;
+  display: block;
+}
+
+.middle-row img{
+  height: 100%;
+  width: 100%;
+}
+
+
+.horses{
+  margin-bottom: 10px;
+}
+
+
+.town{
+  margin-bottom: 10px;
+}
+
+.beach{
+  margin-bottom: 10px;
+}
+
+#places img{
+  border: 2px solid #575757;
+}
+
+#places a{
+  cursor: pointer;
+}
+
 /*Contact Styles*/
 #contact{
-  height: 450px;
+  height: 470px;
   width: 100%;
   background-color: #3c455c;
+  margin-top: 0px;
 }
 
 #contact h1{
   font-size: 2em;
   color: #D3794F;
+  margin-top: 10px;
 }
 
+#contact p{
+  margin-top: 30px;
+  color: white;
+  font-size: 1.1em;
+}
 .info-box{
   width: 50%;
   height: 100%;
@@ -339,14 +477,14 @@ width: 100%;
   height: 35px;
   width: 100%;
   margin: 10px 0;
-  background-color: #dde2e3;
+  background-color: #f4eee1;
 }
 
 #contact textarea{
   height: 125px;
   width: 100%;
   margin: 10px 0;
-  background-color: #dde2e3;
+  background-color: #f4eee1;
 }
 
 #contact button{
@@ -356,10 +494,16 @@ width: 100%;
   border: 2px solid #D3794F;
   color: #dde2e3;
   font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
 }
 
 #contact button:hover{
   color: #75625e;
+}
+
+#contact button:active{
+  transform: translatey(4px);
 }
 
 /*Footer Styles*/
